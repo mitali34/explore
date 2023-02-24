@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Explore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+</head>
+<body>
+    
+    <section>
+        <img src="img/first.jpg" id="first">
+        <img src="img/last.png" id="last"> 
+        <h1 id="text">EXPLORE</h1>
+    </section>
+
+    <div class = "ab-text">
+        <div class = "heading">
+            <h2>Popular Tours</h2>
+            <p>Don't let the loud noise scare you. Let the rhythms of the dance amuse you. You are given a very rare chance Feel the movement of our ancestors </p>
+        </div>
+        <div class = "container">
+            <div class="box box1">
+                <div class="in">
+                   <p>maldives</p>
+                </div>
+            </div>
+            <div class="box box2">
+                <div class="in">
+                   <p>Thailand</p>
+                </div>
+            </div>
+            <div class="box box3">
+                <div class="in">
+                   <p>Spain</p>
+                </div>
+            </div>
+        </div>
+   
+    </div>
+
+     <script>
+        let first = document.getElementById("first");  
+        let last = document.getElementById("last"); 
+        let text =document.getElementById("text"); 
+        
+        window.addEventListener('scroll', function(){
+             var value= window.scrollY;
+        
+        first.style.top =value *0.7 + 'px';
+        last.style.bottom =value* 0.5 + 'px';
+        text.style.top =value * 1 + 'px';
+        
+        })
+        
+    </script> 
+    
+</body>
+</html>
